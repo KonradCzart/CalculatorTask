@@ -1,4 +1,3 @@
-
 def multi(a, b):
     return a * b
 
@@ -6,6 +5,11 @@ def multi(a, b):
 def div(a, b):
     return a / b
 
+def add(x,y):
+    return x + y
+    
+def sub(x,y):
+    return x - y
 
 def show_menu():
     print("Wybierz opcje: ")
@@ -15,8 +19,21 @@ def show_menu():
     print("4: Mnozenie")
     print("5: Wyjscie")
 
-
 if __name__ == '__main__':
-    show_menu()
+    print("Hello world")
+    
+    while True:
+        x = input("Operation: + - * /")
+        
+        if x == "q":
+            print("End")
+            break
+        
+        y1 = input("Number 1:")
+        y2 = input("Number 2:")
 
+        if x == "+":
+            print(y1, "+", y2, "=", add(y1,y2))        
 
+        elif x == "-":
+            print(y1, "-", y2, "=", sub(y1,y2))
