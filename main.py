@@ -29,11 +29,17 @@ if __name__ == '__main__':
             print("End")
             break
         
-        y1 = input("Number 1:")
-        y2 = input("Number 2:")
+        y1 = int(input("Number 1:"))
+        y2 = int(input("Number 2:"))
 
         if x == "+":
             print(y1, "+", y2, "=", add(y1,y2))        
 
         elif x == "-":
             print(y1, "-", y2, "=", sub(y1,y2))
+            
+        elif x == "*":
+            print(y1, "*", y2, "=", multi(y1,y2))
+
+        elif x == "/":
+            print(y1, "/", y2, "=", div(y1,y2))    
